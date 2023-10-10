@@ -23,6 +23,7 @@
 body{font-family: 'Open Sans'!important;}
 
 .bg-light{background-color: var(--quoneek_light)!important;}
+.bg-wine{background-color: var(--quoneek_wine)!important;}
 .bg-dark{background-color: var(--quoneek_dark)!important;}
 .bg-darkest{background-color: var(--quoneek_darkest)!important;}
 
@@ -56,7 +57,6 @@ body{font-family: 'Open Sans'!important;}
 .br-10{border-radius: 10px;}
 .br-20{border-radius: 20px;}
 
-
 .max-height-100vh{max-height: 100vh;}
 
 
@@ -78,17 +78,21 @@ nav{font-size: 14px;}
 .btn-close{--bs-btn-close-color: var(--quoneek_orange)!important; }
 .btn-close:focus,.navbar-toggler:focus{box-shadow: none;}
 .btn-close,.navbar-toggler{border: none!important;}
-.btn{border-radius: 10px;border: none; padding: 1rem;}
-.btn-primary{background-color: var(--quoneek_orange);color: var(--quoneek_light);}
-.btn-primary:hover{background-color: var(--quoneek_orange);color: var(--quoneek_light);}
-.btn-primary:focus{background-color: var(--quoneek_orange);color: var(--quoneek_light);box-shadow: none;}
+.btn{border-radius: 50px;border: none; padding: 1rem;}
+.btn-primary{background-color: var(--quoneek_red);color: var(--quoneek_light);}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active{background-color: var(--quoneek_red)!important;color: var(--quoneek_light)!important;}
+.btn-primary:focus,.btn-primary:active{box-shadow: none;}
 .btn-dark{background-color: var(--quoneek_gray); color: var(--quoneek_light);}
 .btn-dark:hover{background-color: var(--quoneek_gray); color: var(--quoneek_light);}
 .btn-dark:focus{background-color: var(--quoneek_gray); color: var(--quoneek_light);box-shadow: none;}
+.btn-dark{background-color: var(--quoneek_gray); color: var(--quoneek_light);}
+.btn-dark:hover{background-color: var(--quoneek_gray); color: var(--quoneek_light);}
+.btn-dark:focus{background-color: var(--quoneek_gray); color: var(--quoneek_light);box-shadow: none;}
+.btn-nav{margin-top: -1.5rem;}
 
 footer{background-color: var(--quoneek_gray);color:var(--quoneek_light)}
 .info-img{width: 15vw;height: auto;}
-footer .logo{width: 350px; height: auto;}
+footer .logo{width: 400px; height: auto;}
 footer .icon{width: 52px; height:52px;}
 footer p{font-size: 17px;}
 
@@ -124,23 +128,17 @@ footer p{font-size: 17px;}
     footer p{font-size: 14px;}
 }
 @media screen and (max-width:575px) {
-    footer .logo{width: 200px;}
+    footer .logo{width: 300px;}
     footer .icon{width: 35px; height:auto;}
     footer p{font-size: 12px;}
-    footer .px-5{padding:0 1rem!important;}
-
-    #banner, #quienessomos, #departamentos{padding: 1rem!important;}
 }
 @media screen and (max-width:459px) {
-    footer .px-5{padding:0!important;}
     footer p{font-size: 10px;}
 }
 @media screen and (max-width:369px) {
-    footer .logo{width: 85px; height: 85px;}
     footer .icon{width: 30px;}
 }
 @media screen and (max-width:330px) {
-    footer .logo{width: 150px; height: 150px;}
     footer .icon{width: 40px;}
     footer p{font-size: 12px;}
     footer .col{flex: 0 0 auto;width: 100%;text-align: center;}
